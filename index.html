@@ -90,9 +90,9 @@
 <p class="bg-info">Hello World</p>
 <p class="bg-warning">Hello World</p>
 <p class="bg-danger">Hello World</p>
-<button type="button" class="btn btn-primary btn-lg active">Primary button</button>
 <button type="button" class="btn btn-default btn-lg active">Button</button>
-<button type="button" class="btn btn-lg btn-primary" disabled="disabled">Primary button</button>
+<button type="button" class="btn btn-default btn-lg active">Button</button>
+<button type="button" class="btn btn-lg btn-primary" disabled="disabled">Button</button>
 <button type="button" class="btn btn-default btn-lg" disabled="disabled">Button</button>
 
 
@@ -100,13 +100,31 @@
 
 <form>
   <div class="form-group">
-    <label for="exampleInputEmail1">Email address</label>
-    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+    <label for="name">Name</label>
+    <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Name">
   </div>
+  <div class="form-group">
+    <label for="email">Email</label>
+    <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Email">
+	
   <div class="form-group">
     <label for="exampleInputPassword1">Password</label>
     <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
   </div>
+  </div>
+	 <div class="form-group">
+    <label for="textArea">Message</label>
+    <textarea class="form-control" rows="3"></textarea>
+  </div>
+  <div class="form-group">
+  <label for="gender">SelectGender</label>
+  <select class="form-control">
+  <option>Male</option>
+  <option>Female</option>
+  <option>Others</option>
+</select>
+</div>
+
   <div class="form-group">
     <label for="exampleInputFile">File input</label>
     <input type="file" id="exampleInputFile">
@@ -135,6 +153,21 @@ To edit settings, press <kbd><kbd>ctrl</kbd> + <kbd>,</kbd></kbd>
   <button type="submit" class="btn btn-default">Send invitation</button>
 </form>
 
+<!-- On rows -->
+<tr class="active">...</tr>
+<tr class="success">...</tr>
+<tr class="warning">...</tr>
+<tr class="danger">...</tr>
+<tr class="info">...</tr>
+
+<!-- On cells (`td` or `th`) -->
+<tr>
+  <td class="active">...</td>
+  <td class="success">...</td>
+  <td class="warning">...</td>
+  <td class="danger">...</td>
+  <td class="info">...</td>
+</tr>
 	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
